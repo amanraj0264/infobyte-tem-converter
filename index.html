@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <h3 style="color: rgb(145, 29, 29); text-align: center; font-size: 30px; margin-top: 120px; text-decoration: underline;"  >Temperature Conveter</h3>
+    <div class="container">
+    
+    <form id="calcTemp" onsubmit="calculateTemp(); return false">
+        <h4>Please Enter The Temperature</h4>
+        <label for="temp"> </label> <br> 
+        <input type="number" name="temp" id="temp">
+
+        <select name="temp_diff" id="temp_diff" style="height: 40px;">
+            <option value="cel">&#176;Celsius</option>
+            <option value="fah">&#176;Fahrenheit</option>
+        </select> <br> <br>
+
+        <input type="submit" name="temp" id="submit"  value="Convert"> <br>  <br>
+        <span id="result"></span>
+
+        <script src="script.js"></script>
+
+    </form>
+    </div>
+</body>
+
+</html>
